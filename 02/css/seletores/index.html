@@ -7,8 +7,79 @@
   <link rel="stylesheet" href="./styles/skeleton.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
   <style>
+    
+    img {
+      max-width: 100%; /*100% do conteiner*/
+    }
 
-    /* Coloque seus estilos aqui */
+    .row {
+      margin: 50px 0;
+    }
+
+    #legenda {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+    
+    a {
+      color: red;
+    }
+
+    a:hover {
+      color: yellow;
+    }
+
+    a:visited {
+      color: green;
+    }
+
+    table td:first-child {
+      color: green;
+    }
+
+    table td:nth-child(3) {
+      color: red;
+    }
+
+    tbody tr:nth-child(odd) {
+      background: grey;
+    }
+
+    tbody tr:hover {
+      opacity: 0.5;
+      background-color: yellow;
+    }
+
+    input[type="email"],
+    input[type="text"] {
+      border-color: red;
+    } 
+
+    input[type="email"]:hover,
+    input[type="text"]:hover {
+      border-color: purple;
+    } 
+
+    select,
+    textarea {
+      border-color: orange;
+    }
+
+    h1+p {  /*CUIDADO! Depende muito da estrutura do html!!!*/
+      color: pink;
+    }
+
+    h1+p+p {
+      background-color: lightblue;
+    }
+
+    div.columns.four>p { 
+      color: violet;
+    }
+
+   .columns {
+    background-color: aliceblue;
+   }
 
   </style>
 </head>
@@ -18,10 +89,11 @@
       <div class="columns six">
         <h1>Seletores de CSS</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet culpa voluptates soluta libero id similique excepturi totam voluptatibus nobis, laboriosam fugit deserunt perferendis optio mollitia repudiandae autem. Officiis consectetur, vel.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet culpa voluptates soluta libero id similique excepturi totam voluptatibus nobis, laboriosam fugit deserunt perferendis optio mollitia repudiandae autem. Officiis consectetur, vel.</p>
       </div>
       <div class="columns six">
         <img src="./images/placeholder.png" alt="placeholder">
-        <p class="legenda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, consequuntur.</p>
+        <p id="legenda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, consequuntur.</p>
       </div>
     </div>
     <div class="row">
@@ -45,13 +117,61 @@
               <td>22</td>
               <td>Curitiba</td>
             </tr>
+            <tr>
+              <td>Renan Florez</td>
+              <td>26</td>
+              <td>Sao Paulo</td>
+            </tr>
+            <tr>
+              <td>Beatriz Rizental</td>
+              <td>22</td>
+              <td>Curitiba</td>
+            </tr>
+            <tr>
+              <td>Renan Florez</td>
+              <td>26</td>
+              <td>Sao Paulo</td>
+            </tr>
+            <tr>
+              <td>Beatriz Rizental</td>
+              <td>22</td>
+              <td>Curitiba</td>
+            </tr>
           </tbody>
         </table>
       </div>
       <div class="columns four">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, <a href="/">cum temporibus omnis sit</a> reprehenderit adipisci aliquid voluptatibus eveniet obcaecati voluptate dolorem, libero deleniti quidem, quasi aliquam, aspernatur illo eligendi? Officia.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, <a target="_blank" href="http://google.com.br">cum temporibus omnis sit</a> reprehenderit adipisci aliquid voluptatibus eveniet obcaecati voluptate dolorem, libero deleniti quidem, quasi aliquam, aspernatur illo eligendi? Officia.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias eligendi quibusdam eaque maxime. Tempora nulla ducimus excepturi, nostrum, quam dolor saepe error temporibus, odio magni deleniti eveniet. Eum, similique?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias eligendi quibusdam eaque maxime. Tempora nulla ducimus excepturi, nostrum, quam dolor saepe error temporibus, odio magni deleniti eveniet. Eum, similique?</p>
       </div>
     </div>
   </div>
+  <div class="row">
+      <form action="">
+          <div class="six columns">
+            <label for="exampleNomeInput">Nome</label>
+            <input class="u-full-width" type="text">
+            <label for="exampleEmailInput">Seu email</label>
+            <input class="u-full-width" placeholder="test@mailbox.com" type="email">
+          </div>
+          <div class="six columns">
+            <label for="exampleRecipientInput">Opções</label>
+            <select class="u-full-width">
+              <option value="Opt 1">Questões</option>
+              <option value="Opt 2">Admiração</option>
+              <option value="Opt 3">Pode me passar seu número?</option>
+            </select>
+          </div>
+          <label for="exampleMessage">Mensagem</label>
+          <textarea class="u-full-width" placeholder="Olá..." id="exampleMessage"></textarea>
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Enviar uma cópia para você mesmo</span>
+          </label>
+          <input class="button-primary" value="Enviar" type="submit">
+        </div>
+      </form>
+    </div>
 </body>
 </html>
