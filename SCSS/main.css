@@ -1,0 +1,16 @@
+.row {
+  margin: 50px 0;
+}
+.row img {
+  max-width: 100%;
+}
+.row form input[type=submit] {
+  background-color: red;
+}
+
+tbody tr {
+  font-weight: bold;
+}
+tbody tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
