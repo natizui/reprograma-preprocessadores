@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* Overwrites
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#overview {
+  padding-bottom: 20px;
+}
+
+#overview #header {
+  opacity: .3;
+}
+
+/* Card Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#card {
+  background: url(../images/background-gradient-pb.png);
+  background-size: cover;
+  margin: 80px 15px 0 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+#card .wallet {
+  opacity: 0.5;
+  width: 70px;
+  margin: 35px 40px;
+}
+
+#card .balance {
+  margin: 0 10px 5px 40px;
+}
+
+#card h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#card p {
+  font-size: 12px;
+  opacity: 0.5;
+  font-family: 'Roboto';
+}
+
+#card .floating-button {
+  background: linear-gradient(to right, #9785eb 0%, #f97ab3 100%);
+  right: calc(100vw - 20px);
+}
+
+/* Graph Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#graph img {
+  width: 100%;
+}
+
+#graph p {
+  font-size: 12px;
+  font-family: 'Roboto';
+}
+
+/* Percentages Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*# sourceMappingURL=cycle.css.map */
